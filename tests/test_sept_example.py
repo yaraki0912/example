@@ -9,7 +9,10 @@ from click.testing import CliRunner
 
 from sept_example import sept_example
 from sept_example import cli
-
+def TestSept_example():
+    result=sept_example.addition(2,3)
+    assert result==5
+    assert sept_example.c==9
 
 class TestSept_example(unittest.TestCase):
     """Tests for `sept_example` package."""
@@ -32,7 +35,4 @@ class TestSept_example(unittest.TestCase):
         help_result = runner.invoke(cli.main, ['--help'])
         assert help_result.exit_code == 0
         assert '--help  Show this message and exit.' in help_result.output
-    def TestSept_example():
-        result=sept_example.addition(2,3)
-        assert result==5
-        assert sept_example.c==9
+ 
