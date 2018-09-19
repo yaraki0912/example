@@ -18,6 +18,9 @@ sept_example
      :target: https://pyup.io/repos/github/yaraki0912/sept_example/
      :alt: Updates
 
+.. image:: https://coveralls.io/repos/github/yaraki0912/sep_example/badge.svg?branch=master
+:target: https://coveralls.io/github/yaraki0912/sep_example?branch=master
+
 
 
 class travis example
