@@ -32,3 +32,7 @@ class TestSept_example(unittest.TestCase):
         help_result = runner.invoke(cli.main, ['--help'])
         assert help_result.exit_code == 0
         assert '--help  Show this message and exit.' in help_result.output
+    def TestSept_example():
+        result=sept_example.addition(2,3)
+        assert result==5
+        assert sept_example.c==9
