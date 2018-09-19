@@ -20,7 +20,9 @@ before_install:
 -pip install scipy
 -sudo apt-get install- -qq python-numpy python-scipy python-matplotlib
 
-
+script: 
+- coverage run --source=sep_example/sep_example.py setup.py test
+- coverage report -m
 # Assuming you have installed the travis-ci CLI tool, after you
 # create the Github repo and add it to Travis, run the
 # following command to finish PyPI deployment setup:
