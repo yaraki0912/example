@@ -10,6 +10,7 @@ from click.testing import CliRunner
 from sept_example import sept_example
 from sept_example import cli
 
+
 def TestSept_example():
     result=sept_example.addition(2,3)
     assert result==5
